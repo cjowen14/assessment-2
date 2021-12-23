@@ -156,3 +156,9 @@ console.log(deals);
 */
 
 //CODE HERE
+function newMonth(month){
+    deals[1].desc = deals[1].desc.replace('March', month).trim();
+}
+
+newMonth('April');
+console.log(deals);
