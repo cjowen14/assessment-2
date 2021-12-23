@@ -86,6 +86,17 @@ console.log(deliver);
 */
 
 // CODE HERE
+function canWeDeliver2(zipCode){
+    for(let i = 0; i < deliveryAreaZipCodes.length; i++){
+        if(deliveryAreaZipCodes[i] === zipCode){
+            return `You are in our delivery zone!`;
+        } 
+    } return `Sorry we are unable to deliver to that address`;
+    
+}
+
+let deliver2 = canWeDeliver2(85206);
+console.log(deliver2);
 
 
 //////////////////PROBLEM 3////////////////////
