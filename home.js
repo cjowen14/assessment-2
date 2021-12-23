@@ -112,6 +112,7 @@ console.log(deliver2);
     Read on for more instructions.
 */
 
+
 const deals = [
     {
         title: '15% Off!', 
@@ -133,6 +134,11 @@ const deals = [
 */
 
 //CODE HERE
+function newDeal(discount){
+    deals[0].title = deals[0].title.replace('15', discount);
+}
+newDeal('10');
+console.log(deals);
 
 
 
