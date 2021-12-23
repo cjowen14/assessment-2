@@ -32,6 +32,15 @@
 
 //CODE HERE
 
+let pizza = {
+    name: 'Deluxe',
+    price: 5.99,
+    category: 'Entree',
+    popularity: 9,
+    rating: 9.8,
+    tags: [family, bestSeller, recommended]
+}
+
 
 
 //////////////////PROBLEM 2////////////////////
