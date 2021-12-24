@@ -151,7 +151,7 @@ const foodArr = [
 
 ]
 
-console.log(foodArr);
+//console.log(foodArr);
 
 
 
@@ -168,6 +168,15 @@ console.log(foodArr);
 */
 
 //CODE HERE
+const filteredFood = foodArr.filter(function(element){
+    
+        return element.tags.includes('bestSeller')
+         
+})
+
+console.log(filteredFood);
+
+
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
