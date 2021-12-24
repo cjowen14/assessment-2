@@ -103,6 +103,55 @@ console.log(category);
 */
 
 //CODE HERE
+const foodArr = [
+    {
+        name: 'Cheesy Breadsticks',
+        price: 2.49,
+        category: 'Appetizer',
+        popularity: 10,
+        rating: 9.7,
+        tags: ['kids', 'bestSeller', 'appetizer']
+    },
+
+    {
+        name: 'Large Drink',
+        price: 1.99,
+        category: 'Drinks',
+        popularity: 7,
+        rating: 8.5,
+        tags: ['drinks', 'large', 'freeRefills']
+    },
+
+    {
+        name: 'Dessert Pizza',
+        price: 3.99,
+        category: 'Dessert',
+        popularity: 6,
+        rating: 7.5,
+        tags: ['kids', 'dessert', 'chocolate']
+    },
+
+    {
+        name: 'Small Drink',
+        price: 1.29,
+        category: 'Drinks',
+        popularity: 8.5,
+        rating: 8.7,
+        tags: ['drinks', 'small', 'soda']
+    },
+
+    {
+        name: 'Extra Toppings',
+        price: 0.79,
+        category: 'Toppings',
+        popularity: 8,
+        rating: 9.5,
+        tags: ['olives', 'pepperoni', 'sausage', 'green peppers', 'oninons']
+    }
+
+]
+
+console.log(foodArr);
 
 
 
