@@ -168,13 +168,13 @@ const foodArr = [
 */
 
 //CODE HERE
-const filteredFood = foodArr.filter(function(element){
+//const filteredFood = foodArr.filter(function(element){
     
-        return element.tags.includes('bestSeller')
+        //return element.tags.includes('bestSeller')
          
-})
+//})
 
-console.log(filteredFood);
+//console.log(filteredFood);
 
 
 
@@ -222,6 +222,42 @@ console.log(filteredFood);
 */
 
 //CODE HERE
+function filterByProperty(property, number, type){
+    const filteredArray = foodArr.filter(function(element){
+        if (property === 'price'){
+        if (type === 'above'){
+        return element.price > number;
+        } else {
+            return element.price < number;
+        }
+    }  if (property === 'rating'){
+        if (type === 'above'){
+        return element.rating > number;
+        } else {
+            return element.rating < number;
+        }
+    }
+        else if (property === 'popularity'){
+            if (type === 'above'){
+            return element.popularity > number;
+            } else {
+                return element.popularity < number;
+            }
+        }
+
+    } )
+    return filteredArray;
+} 
+
+
+let newArray = filterByProperty('popularity', 9, 'below');
+console.log(newArray);
+
+//const filteredArray2 = foodArr.filter(function(element){
+  //  return element.price >= 1.99;
+//})
+
+//console.log(filteredArray2);
 
 
 /*
