@@ -38,7 +38,7 @@ let pizza = {
     category: 'Entree',
     popularity: 9,
     rating: 9.8,
-    tags: [family, bestSeller, recommended]
+    tags: ['family', 'bestSeller', 'recommended']
 }
 
 
@@ -52,6 +52,7 @@ let pizza = {
 */
 
 //CODE HERE
+console.log(`Out of 10, the popularity is: ${pizza.popularity}.`);
 
 
 /*
@@ -62,6 +63,7 @@ let pizza = {
 */
 
 //CODE HERE
+console.log(pizza.tags[1]);
 
 
 /*
@@ -72,6 +74,8 @@ let pizza = {
 */
 
 //CODE HERE
+let {price} = pizza;
+console.log(price);
 
 
 /*
@@ -82,6 +86,8 @@ let pizza = {
 */
 
 //CODE HERE
+let {category} = pizza;
+console.log(category);
 
 
 //////////////////PROBLEM 3////////////////////
