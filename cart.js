@@ -36,7 +36,6 @@ const cart = [
 //CODE HERE
 
 const summedPrice = cart.map(function(element){
-    //const newCurr = curr.price;
     return element.price;
 }).reduce(function(accum, curr){
     return accum + curr;
@@ -63,6 +62,14 @@ console.log(`The total in the cart is: $${summedPrice}.`);
 */
 
 //CODE HERE
+function calcFinalPrice (cartTotal, couponValue, tax){
+    let taxTotal = cartTotal * (1 + tax);
+    let newTotal = taxTotal - couponValue;
+    return newTotal;
+}
+
+let total = calcFinalPrice(20, 2, .07);
+console.log(total);
 
 
 
