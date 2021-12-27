@@ -95,6 +95,10 @@ console.log(finalPrice);
 
 /*
     TEXT ANSWER HERE
+    // First and Last name to identify the customer - String
+    // Phone Number to contact the customer - Number
+    // Email Address to send confirmation - String
+    // Credit Card Number for payment - Number
 
 */
 
@@ -104,3 +108,16 @@ console.log(finalPrice);
 */
 
 //CODE HERE
+
+let customerInfo = {
+    firstName: 'Billy',
+    lastName: 'Bob',
+    phoneNumber: 5555555555,
+    email: 'billyb@aol.com',
+    creditCard: 1234123412341234
+}
+
+console.log(customerInfo);
+
+let fullName = `${customerInfo.firstName} ${customerInfo.lastName}`;
+console.log(fullName);
