@@ -63,13 +63,13 @@ console.log(`The total in the cart is: $${summedPrice}.`);
 
 //CODE HERE
 function calcFinalPrice (cartTotal, couponValue, tax){
-    let taxTotal = cartTotal * (1 + tax);
-    let newTotal = taxTotal - couponValue;
-    return newTotal;
+    cartTotal = cartTotal * (1 + tax);
+    cartTotal = cartTotal - couponValue;
+    return cartTotal;
 }
 
-let total = calcFinalPrice(20, 2, .07);
-console.log(total);
+let finalPrice = calcFinalPrice(20, 2, .07);
+console.log(finalPrice);
 
 
 
