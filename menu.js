@@ -168,13 +168,13 @@ const foodArr = [
 */
 
 //CODE HERE
-//const filteredFood = foodArr.filter(function(element){
+const filteredFood = foodArr.filter(function(element){
     
-        //return element.tags.includes('bestSeller')
+        return element.tags.includes('bestSeller')
          
-//})
+})
 
-//console.log(filteredFood);
+console.log(filteredFood);
 
 
 
@@ -249,17 +249,6 @@ function filterByProperty(property, number, type){
     return filteredArray;
 } 
 
-
-let newArray = filterByProperty('popularity', 9, 'below');
-console.log(newArray);
-
-//const filteredArray2 = foodArr.filter(function(element){
-  //  return element.price >= 1.99;
-//})
-
-//console.log(filteredArray2);
-
-
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
@@ -268,3 +257,5 @@ console.log(newArray);
 */
 
 //CODE HERE
+let newArray = filterByProperty('price', 2, 'below');
+console.log(newArray);

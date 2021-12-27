@@ -35,6 +35,15 @@ const cart = [
 
 //CODE HERE
 
+const summedPrice = cart.map(function(element){
+    //const newCurr = curr.price;
+    return element.price;
+}).reduce(function(accum, curr){
+    return accum + curr;
+})
+
+console.log(`The total in the cart is: $${summedPrice}.`);
+
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 
