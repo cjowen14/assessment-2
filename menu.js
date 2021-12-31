@@ -249,6 +249,30 @@ function filterByProperty(property, number, type){
     return filteredArray;
 } 
 
+//tried a differnt way to see which one would be more simple
+function filterByProperty2(property, number, type){
+    const filteredArray = foodArr.filter(function(element){
+
+        if(property === 'price' && type === 'above'){
+            return element.price > number;
+        }else if(property === 'price' && type === 'below'){
+            return element.price < number;
+        }else if(property === 'rating' && type === 'above'){
+            return element.price > number;
+        }else if(property === 'rating' && type === 'below'){
+            return element.price < number;
+        }else if(property === 'popularity' && type === 'above'){
+            return element.price > number;
+        }else if(property === 'popularity' && type === 'below'){
+            return element.price < number;
+        }
+
+    } )
+    return filteredArray;
+} 
+
+
+
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
@@ -258,4 +282,6 @@ function filterByProperty(property, number, type){
 
 //CODE HERE
 let newArray = filterByProperty('price', 2, 'below');
+console.log(newArray);
+let newArray2 = filterByProperty2('price', 2, 'below');
 console.log(newArray);
